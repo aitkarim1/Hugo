@@ -1,0 +1,26 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Desarrollo Web'
+theme = 'hugo-theme-cleanwhite'
+
+[params]
+  header_image = "images/foto1.jpg"
+
+  [[params.addtional_menus]]
+  title =  "Historia"
+  href =  "/historia/"
+  [[params.addtional_menus]]
+  title =  "Empresas"
+  href =  "/empresas/"
+  [[params.addtional_menus]]
+  title =  "ABOUT"
+  href =  "/about/"
+
+  [params.social]
+  github         = "https://github.com/yourgithub"
+
+
+
+[Author]
+  name="Karim Ait"
+

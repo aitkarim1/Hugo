@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Empresas on Desarrollo Web</title>
+    <link>https://example.org/empresas/</link>
+    <description>Recent content in Empresas on Desarrollo Web</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 18 Oct 2023 01:50:22 +0200</lastBuildDate><atom:link href="https://example.org/empresas/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

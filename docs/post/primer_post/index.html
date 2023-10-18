@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="Desarrollo Web">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="https://example.org//images/foto1.jpg">
+    <meta property="twitter:image" content="https://example.org//images/foto1.jpg" />
+    
+
+    
+    <meta name="title" content="Qué es HTML" />
+    <meta property="og:title" content="Qué es HTML" />
+    <meta property="twitter:title" content="Qué es HTML" />
+    
+
+    
+    <meta name="description" content="">
+    <meta property="og:description" content="" />
+    <meta property="twitter:description" content="" />
+    
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+
+    <meta name="keyword"  content="">
+    <link rel="shortcut icon" href="/images/icono.png">
+
+    <title>Desarrollo Web</title>
+
+
+    <link rel="canonical" href="/post/primer_post/">
+
+    
+
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hugo-theme-cleanwhite.min.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+
+    
+    <link rel="stylesheet" href="/css/font-awesome.all.min.css">
+
+    
+    
+
+    <link rel="stylesheet" href="/css/estilo.css">
+
+    
+    <script src="/js/jquery.min.js"></script>
+
+    
+    <script src="/js/bootstrap.min.js"></script>
+
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    <script src="/js/lazysizes.min.js"></script>
+
+    
+    
+
+</head>
+
+
+
+
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Desarrollo Web</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">All Posts</a>
+                    </li>
+                    
+                        
+                    
+
+		    
+                        <li><a href="/historia//">Historia</a></li>
+                    
+                        <li><a href="/empresas//">Empresas</a></li>
+                    
+                        <li><a href="/about//">ABOUT</a></li>
+                    
+                    <li>
+                        <a href="/"><img src="/images/icono.png" alt="" width="50px" style="cursor: pointer;"></a>
+		           </li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/images/foto1.jpg')
+    }
+</style>
+
+<header class="intro-header" >
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                    </div>
+                    <h1>Qué es HTML</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+                        
+                            Posted by 
+                            
+                                    Desarrollo Web
+                             
+                            on 
+                            Wednesday, October 18, 2023
+                            
+                            
+                            
+                            
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                <h2 id="qué-es-html">Qué es HTML</h2>
+<p><a href="https://es.wikipedia.org/wiki/HTML">HTML</a> es la abreviatura de <em>hypertext markup language</em>, el lenguaje central de la World Wide Web. Originalmente diseñado como un lenguaje para explicar semánticamente documentos científicos, se ha adaptado para describir la estructura básica de páginas web y aplicaciones en línea.</p>
+<p>Por ejemplo, HTML se puede usar para especificar qué parte del documento es un título, cuál es una lista y cuál es una imagen. También se puede emplear para vincular una palabra, incrustar una imagen, poner una fuente en cursivas y más.</p>
+<p>Publicado por primera vez por Tim Berners-Lee en 1989, HTML ahora se usa en el 94 % de todos los sitios web, y probablemente en todos los que visitas.</p>
+<hr>
+<h2 id="es-html-un-lenguaje-de-programación">¿Es HTML un lenguaje de programación?</h2>
+<div style="position: relative; height: 200px;">
+  <img src="https://example.org//images/icono.png"
+       alt=logo_hugo
+       height="100%"/>
+</div>
+<p>Si HTML es o no técnicamente un lenguaje de programación, <strong>es un debate continuo entre los desarrolladores y expertos web</strong>.</p>
+<p>La mayoría definen HTML como un lenguaje de «marcado», no como un lenguaje de programación; algunos otros argumentan que los dos no se excluyen mutuamente.</p>
+<p>Para entender esta distinción, tenemos que conocer la definición de un lenguaje de programación. Todos los lenguajes de programación tienen algún propósito funcional: necesitan «hacer» algo, ya sea evaluar expresiones, declarar variables o modificar datos.</p>
+<p>Estos lenguajes no solo instruyen a las computadoras qué hacer, sino también cómo hacerlo. JavaScript es el lenguaje de programación más utilizado en el desarrollo web. Otros lenguajes de programación populares incluyen Python, Java y C/C++.</p>
+<p>HTML, por otro lado, realmente no «hace» nada. <strong>Simplemente les da a los navegadores el contenido que necesitan mostrar</strong>. A HTML no le importa cómo el navegador presenta el contenido, siempre que se muestre. En otras palabras, HTML tiene un propósito estructural, no funcional.</p>
+<p>Aun así, algunos desarrolladores usan esta misma lógica para argumentar que HTML es solo un lenguaje de programación declarativo. Según el profesor David Brailsford de la Universidad de Nottingham, por ejemplo, los lenguajes declarativos están mucho más restringidos que otros lenguajes porque piden algo y no les importa cómo sucede, pero eso no los hace menos lenguajes de programación.</p>
+<hr>
+<h2 id="para-qué-se-usa-html">Para qué se usa HTML</h2>
+<p>HTML se utiliza principalmente para crear páginas web. Debido a que es de código abierto y es compatible con todos los navegadores modernos, HTML es de uso gratuito y garantiza que tu texto, imágenes y otros elementos se muestren según lo previsto. Sin HTML, todas las páginas web serían archivos de texto sin formato que se verían así:
+
+  <img src="https://blog.hubspot.es/hubfs/media/htmlloremipsum.png" alt="image">
+
+</p>
+<p>Con HTML, no solo puedes <em>formatear documentos con encabezados</em>, párrafos, listas y otros elementos, sino también puedes incrustar imágenes, videos, archivos de audio y otros elementos multimedia a través de hipervínculos. Y puedes vincularte a otras páginas web en el mismo sitio web o desde otro. Esto permite a los visitantes navegar fácilmente por tu sitio web y saltar entre páginas web almacenadas en diferentes servidores.</p>
+<p>Incluso después de agregar encabezados, imágenes e hipervínculos, aún tendrías una página web muy básica, y eso es así por diseño. Se supone que HTML crea una base simple sobre la cual se pueden agregar hojas de estilo en cascada o Cascading style sheets (CSS) y <a href="https://en.wikipedia.org/wiki/JavaScript">JavaScript (JS)</a>. Con CSS, puedes personalizar el estilo y diseño, cambiando el color, la fuente y la alineación de los elementos. Con CSS y JS agregas funciones dinámicas como ventanas emergentes y controles deslizantes de fotos.</p>
+<h2 id="video">Video:</h2>
+<div style="position: relative; padding-bottom: 56.25%;">
+  <iframe src="https://www.youtube.com/embed/tPzq8IufGxE"
+  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;"
+  allowfullscreen title="YouTube Video">
+  </iframe>
+</div>
+
+
+                
+
+                
+                <hr>
+                <ul class="pager">
+                    
+                    
+                    <li class="next">
+                        <a href="/post/segundo_post/" data-toggle="tooltip" data-placement="top" title="¿Qué es BACKEND y FRONTEND? (guía completa)">Next
+                            Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+                
+
+                
+
+
+
+            </div>
+
+            
+            
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">CATALOG</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
+            
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+
+                
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+                    
+                    
+                    
+                    
+
+		            
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/yourgithub">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		            
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+            
+            
+            
+           
+             </ul>
+		<p class="copyright text-muted">
+                    Copyright &copy; Desarrollo Web 2023
+                    <br>
+                    <b>Created By Karim Ait</b>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function loadAsync(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        loadAsync("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    loadAsync("https://cdn.jsdelivr.net/npm/fastclick@1.0.6/lib/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+    function generateCatalog(selector) {
+
+        
+        
+        
+        
+            _containerSelector = 'div.post-container'
+        
+
+        
+        var P = $(_containerSelector), a, n, t, l, i, c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+
+        
+        $(selector).html('')
+
+        
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#" + $(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="' + i + '" rel="nofollow">' + t + '</a>');
+            l = $('<li class="' + n + '_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;
+    }
+
+    generateCatalog(".catalog-body");
+
+    
+    $(".catalog-toggle").click((function (e) {
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    
+
+
+    loadAsync("\/js\/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+
+
+
+
+</body>
+</html>

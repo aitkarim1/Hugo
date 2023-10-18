@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Desarrollo Web</title>
+    <link>https://example.org/post/</link>
+    <description>Recent content in Posts on Desarrollo Web</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 18 Oct 2023 01:13:47 +0200</lastBuildDate><atom:link href="https://example.org/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>¿Qué es BACKEND y FRONTEND? (guía completa)</title>
+      <link>https://example.org/post/segundo_post/</link>
+      <pubDate>Wed, 18 Oct 2023 01:13:47 +0200</pubDate>
+      
+      <guid>https://example.org/post/segundo_post/</guid>
+      <description>En el desarrollo web actual existen 3 conceptos claves a tener en cuenta: Frontend, API y Backend. Decimos que son conceptos &amp;ldquo;actuales&amp;rdquo; debido a qué anteriormente todo se hacía con PHP, increíble ¿cierto? pero todo empezó así, la estructura de las webs y la comunicación con el servidor se hacía con PHP, no era necesario utilizar JavaScript lo cual hoy en día es casi impensable para el desarrollo de una Web.</description>
+    </item>
+    
+    <item>
+      <title>Qué es HTML</title>
+      <link>https://example.org/post/primer_post/</link>
+      <pubDate>Wed, 18 Oct 2023 01:13:30 +0200</pubDate>
+      
+      <guid>https://example.org/post/primer_post/</guid>
+      <description>Qué es HTML HTML es la abreviatura de hypertext markup language, el lenguaje central de la World Wide Web. Originalmente diseñado como un lenguaje para explicar semánticamente documentos científicos, se ha adaptado para describir la estructura básica de páginas web y aplicaciones en línea.
+Por ejemplo, HTML se puede usar para especificar qué parte del documento es un título, cuál es una lista y cuál es una imagen. También se puede emplear para vincular una palabra, incrustar una imagen, poner una fuente en cursivas y más.</description>
+    </item>
+    
+  </channel>
+</rss>

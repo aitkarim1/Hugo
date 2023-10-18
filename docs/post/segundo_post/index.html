@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="Desarrollo Web">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="https://example.org//images/foto1.jpg">
+    <meta property="twitter:image" content="https://example.org//images/foto1.jpg" />
+    
+
+    
+    <meta name="title" content="¿Qué es BACKEND y FRONTEND? (guía completa)" />
+    <meta property="og:title" content="¿Qué es BACKEND y FRONTEND? (guía completa)" />
+    <meta property="twitter:title" content="¿Qué es BACKEND y FRONTEND? (guía completa)" />
+    
+
+    
+    <meta name="description" content="">
+    <meta property="og:description" content="" />
+    <meta property="twitter:description" content="" />
+    
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+
+    <meta name="keyword"  content="">
+    <link rel="shortcut icon" href="/images/icono.png">
+
+    <title>Desarrollo Web</title>
+
+
+    <link rel="canonical" href="/post/segundo_post/">
+
+    
+
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hugo-theme-cleanwhite.min.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+
+    
+    <link rel="stylesheet" href="/css/font-awesome.all.min.css">
+
+    
+    
+
+    <link rel="stylesheet" href="/css/estilo.css">
+
+    
+    <script src="/js/jquery.min.js"></script>
+
+    
+    <script src="/js/bootstrap.min.js"></script>
+
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    <script src="/js/lazysizes.min.js"></script>
+
+    
+    
+
+</head>
+
+
+
+
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Desarrollo Web</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">All Posts</a>
+                    </li>
+                    
+                        
+                    
+
+		    
+                        <li><a href="/historia//">Historia</a></li>
+                    
+                        <li><a href="/empresas//">Empresas</a></li>
+                    
+                        <li><a href="/about//">ABOUT</a></li>
+                    
+                    <li>
+                        <a href="/"><img src="/images/icono.png" alt="" width="50px" style="cursor: pointer;"></a>
+		           </li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/images/foto1.jpg')
+    }
+</style>
+
+<header class="intro-header" >
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                    </div>
+                    <h1>¿Qué es BACKEND y FRONTEND? (guía completa)</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+                        
+                            Posted by 
+                            
+                                    Desarrollo Web
+                             
+                            on 
+                            Wednesday, October 18, 2023
+                            
+                            
+                            
+                            
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                <p>En el desarrollo web actual existen 3 conceptos claves a tener en cuenta: Frontend, API y Backend. Decimos que son conceptos &ldquo;actuales&rdquo; debido a qué anteriormente todo se hacía con PHP, increíble ¿cierto? pero todo empezó así, la estructura de las webs y la comunicación con el servidor se hacía con PHP, no era necesario utilizar JavaScript lo cual hoy en día es casi impensable para el desarrollo de una Web.</p>
+<h2 id="la-web-funciona-con-la-arquitectura-cliente-servidor">La web funciona con la arquitectura cliente servidor</h2>
+<p>
+  <img src="https://edteam-media.s3.amazonaws.com/blogs/original/a04ca961-f61d-4dc3-837c-55c06df42ce7.png" alt="image">
+
+</p>
+<p>Antes de explicarte qué es Frontend y Backend, debemos entender la arquitectura cliente servidor. El cliente y el servidor son dos computadoras (y no, no son las computadoras de tu cliente y la tuya 😆), el cliente (cualquier computadora que desee consultar la web) es quien pide la información y el servidor es quien se la suministra, siempre y cuando el cliente tenga los permisos.</p>
+<p>El proceso cuando el cliente solicita información o recursos al servidor se le llama petición, en el desarrollo web tradicional cada petición recargaba toda la página y había una mayor carga en el servidor, pero con tecnologías como <a href="https://es.wikipedia.org/wiki/AJAX">Ajax</a> y <a href="https://es.wikipedia.org/wiki/WebSocket">Websockets</a> se pueden hacer peticiones de cosas muy especificas haciendo que la web sea mucho más fluida.</p>
+<hr>
+<h2 id="desarrollo-web-tradicional-90s---2000">Desarrollo web tradicional (90s - 2000)</h2>
+<p>Como ya te expliqué al principio <strong>se hacía casi todo con PHP</strong> y por eso no existía o no había una división entre programador Frontend (el que hace el desarrollo para el cliente) y Backend (el que hace el desarrollo para el servidor), en este entonces el monopolio lo tenia <em>Microsoft</em> con su navegador <em>Internet Explorer</em> y este navegador no respetaba ningún estándar y no había muchas opciones, por este motivo tal vez los más veteranos no entiendan muy bien estos términos &ldquo;actuales&rdquo;</p>
+<hr>
+<h2 id="desarrollo-web-moderno">Desarrollo web moderno</h2>
+<p>
+  <img src="https://edteam-media.s3.amazonaws.com/blogs/original/c79bf9fc-7c15-400d-9a01-8d0f2061ad4d.png" alt="image">
+
+</p>
+<p>El desarrollo web moderno <strong>surge alrededor del 2008</strong> cuando empieza el auge de HTML5, es en este momento dónde empezamos a hablar de Frontend y Backend, debido a que la tecnología web crece enormemente gracias a las APIs que vinieron con HTML5, estas APIs hacen posible una comunicación entre Backend y Frontend, de esta manera cualquier Frontend se puede comunicar con cualquier Backend.</p>
+<hr>
+<h2 id="frontend">Frontend</h2>
+<p>El frontend cómo ya dijimos es el cliente y es el que se encarga de toda la lógica de este cuando desea realizar alguna petición, podemos decir que este concepto surge en el 2008 debido a las herramientas que surgieron a partir de ese momento: HTML5, CSS3 (2008), JSON (2013 - 2015), AngularJS (2010), Ember, Backbone, Rest (2000) y Nodejs, estas tecnologías hicieron posible el Frontend.</p>
+<p>El Frontend ha ido evolucionando con nuevas tecnológicas como lo son: ES6 (2015), React (2013), Vue (2014), Angular (2016), GraphQL (2015), las cuales por lo menos ya deben haber escuchado; en el panorama actual entra en el juego WebAssembly que es un nuevo tipo de código que se ejecuta en los navegadores web modernos y proporciona nuevas funciones y grandes ganancias en el rendimiento.</p>
+<p>
+  <img src="https://edteam-media.s3.amazonaws.com/blogs/original/46ccfe56-bee0-4a2c-adaf-ecd3213a0de5.png" alt="image">
+
+</p>
+<h3 id="características-de-webassemby">Características de WebAssemby</h3>
+<p>No está destinado a ser escrito a mano: Está diseñado para ser un objetivo de compilación efectivo para lenguajes de origen de bajo nivel como C, C ++, Rust, etc.
+No es necesario saber crear código de WebAssembly: puedes importar librerías y programar con JavaScript.
+Se ejecuta a una velocidad casi nativa en diferentes plataformas.
+Lenguaje ensamblador de bajo nivel: Pero tiene un formato de texto legible por humanos
+Funciona con otras tecnologías web: Mantiene la compatibilidad con versiones anteriores</p>
+<hr>
+<h2 id="backend">Backend</h2>
+<p>Llega el momento del Backend y cómo ya dijimos es quien esta del lado del servidor, este se encarga de la lógica de negocio, es decir, todas las funciones que requiere el cliente.</p>
+<p>Un desarrollador Backend debe ser capas de crear una API para que el Frontend pueda consumirla y así poder realizar peticiones, en el desarrollo de esta API hay que conectarse a una base de datos y definir que le es permitido mostrar al frontend (un desarrollador backend no necesariamente debe saber bases de datos, puede hacerlo a través de una ORM).</p>
+<h3 id="backend-como-servicio">Backend como servicio</h3>
+<p>El Backend así como el Frontend ha evolucionado, y el último paso que ha dado no le puede agradar a los desarrolladores; hoy en día se puede contratar como un servicio, es decir un desarrollador Frontend ya puede hacer todo el trabajo con estos servicios, solo debe ingresar a la plataforma y realizar algunas configuraciones.</p>
+<p>Algunos servicios que podemos encontrar son: Firebase, Serverless y Servicios de cloud computing; siendo frirebase el más conocido. Estos servicios ofrecen grandes ventajas como seguridad, facilidad de integración, funcionalidades preestablecidas, etc. Pero hay que tener en cuenta que es un servicio y cómo todo servicio hay que pagar, por estos motivos tal vez hayan muchas empresas que migren y otras no, entonces, desarrolladores de Backend no se preocupen, no se van a quedar sin trabajo.</p>
+<hr>
+<h2 id="conclusiones">Conclusiones</h2>
+<p>El reto de un programador Frontend es que su código funcione en todos los navegadores y los retos de un programador backend son la seguridad y el rendimiento.</p>
+<p>Aunque Frontend es todo lo que tiene que ver con el lado del cliente, no hay que confundir diseñador con programador, muchas veces creemos que los programadores Frontend deben saber diseñar, pero esto no es así, esa no es tarea del desarrollador, en esta tarea hay otras personas involucradas, como el diseñador y el maquetador (el que pasa el diseño a html y css).</p>
+<p>El desarrollo Backend tradicionalmente ha sido monolítico, es decir un Backend gigantesco que siempre se va alimentando, pero en esta época entran en juego los micro servicios con los cuales se puede dividir la lógica de negocio en pequeños servicios (funcionalidades).</p>
+
+
+                
+
+                
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/post/primer_post/" data-toggle="tooltip" data-placement="top" title="Qué es HTML">&larr;
+                            Previous Post</a>
+                    </li>
+                    
+                    
+                </ul>
+                
+
+                
+
+
+
+            </div>
+
+            
+            
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">CATALOG</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
+            
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+
+                
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+                    
+                    
+                    
+                    
+
+		            
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/yourgithub">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		            
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+            
+            
+            
+           
+             </ul>
+		<p class="copyright text-muted">
+                    Copyright &copy; Desarrollo Web 2023
+                    <br>
+                    <b>Created By Karim Ait</b>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function loadAsync(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        loadAsync("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    loadAsync("https://cdn.jsdelivr.net/npm/fastclick@1.0.6/lib/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+    function generateCatalog(selector) {
+
+        
+        
+        
+        
+            _containerSelector = 'div.post-container'
+        
+
+        
+        var P = $(_containerSelector), a, n, t, l, i, c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+
+        
+        $(selector).html('')
+
+        
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#" + $(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="' + i + '" rel="nofollow">' + t + '</a>');
+            l = $('<li class="' + n + '_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;
+    }
+
+    generateCatalog(".catalog-body");
+
+    
+    $(".catalog-toggle").click((function (e) {
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    
+
+
+    loadAsync("\/js\/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+
+
+
+
+</body>
+</html>
